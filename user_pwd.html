@@ -20,19 +20,19 @@
                 <div class="layui-form-item">
                     <label class="layui-form-label">原密码</label>
                     <div class="layui-input-block">
-                        <input type="text" name="username" required lay-verify="required" placeholder="请输入原密码" autocomplete="off" class="layui-input" readonly />
+                        <input type="password" name="oldPwd" required lay-verify="required|pwd" placeholder="请输入原密码" autocomplete="off" class="layui-input" />
                     </div>
                 </div>
                 <div class="layui-form-item">
                     <label class="layui-form-label">新密码</label>
                     <div class="layui-input-block">
-                        <input type="text" name="nickname" required lay-verify="required|nickname" placeholder="请输入新密码" autocomplete="off" class="layui-input" />
+                        <input type="password" name="newPwd" required lay-verify="required|pwd" placeholder="请输入新密码" autocomplete="off" class="layui-input" id="npwd" />
                     </div>
                 </div>
                 <div class="layui-form-item">
                     <label class="layui-form-label">确认新密码</label>
                     <div class="layui-input-block">
-                        <input type="text" name="email" required lay-verify="required|email" placeholder="请再次确认密码" autocomplete="off" class="layui-input" />
+                        <input type="password" name="reNewPassword" required lay-verify="required|pwd|repwd" placeholder="请再次确认密码" autocomplete="off" class="layui-input" />
                     </div>
                 </div>
                 <div class="layui-form-item">
@@ -45,5 +45,9 @@
         </div>
     </div>
 </body>
+<script src="/assets/lib/jquery.js"></script>
+<script src="/assets/js/baseApi.js"></script>
+<script src="/assets/lib/layui/layui.all.js"></script>
+<script src="/assets/js/user_pwd.js"></script>
 
 </html>
